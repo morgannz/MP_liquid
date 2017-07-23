@@ -3,6 +3,7 @@
 	margin:0;
 	padding:0;
 	border:0;
+
 }
 /* ----------------- Website background and general text colour ----------------- */
 body {
@@ -15,14 +16,14 @@ body {
 address, article, aside, figcaption, figure, footer, header, nav, section{display:block; margin:0; padding:0;}
 
 img {
-	width:auto;
-	max-width:100%;
-	height:auto;
-	margin:0;
-	padding:0;
-	border:none;
-	line-height:normal;
-	vertical-align:middle;
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	border: none;
+	line-height: normal;
+	vertical-align: middle;
 }
 
 .clearfix:before, .clearfix:after{content:""; display:table;}
@@ -31,17 +32,17 @@ img {
 
 /* ----------------- Wrapper - keeps all content in the center of page -----------------  */
 .wrapper {
-	display:block;
-	width:80%;
-	height:auto;
-	margin:auto;
-	overflow:hidden;
+	display: block;
+	width: 85%;
+	height: auto;
+	margin: auto;
+	overflow: hidden;
 }
 /* The rest is pretty self explanatory - it appears in the order that it occurs on the HTML document */
 .top {
 	display: block;
 	width: 100%;
-	margin-top: 20px;
+	margin-top: 35px;
 	padding-bottom: 25px;
 	border-bottom: 1px solid #2d2d2d;
 }
@@ -49,9 +50,7 @@ img {
 .logoimage {
 	float: left;
 	padding-right: 10px;
-
 }
-
 nav {
 	float: right;
 	display: block;
@@ -59,70 +58,91 @@ nav {
 	margin-top: 20px;
 }
 nav ul li {
-	display:inline;
-	margin-right:30px;
+	display: inline;
+	margin-right: 20px;
 }
 nav ul li:last-child {
-	margin-right:0;
+	margin-right: 0;
 }
 nav ul li a {
-	font-family:Lato, Helvetica, Arial, sans-serif;
-	text-decoration:none;
-	text-transform:uppercase;
-	font-weight:400;
-	line-height:250%;
-	
-	color:#2d2d2d;
+	font-family: Lato, Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 250%;
+	padding: 6px;
 }
 nav ul li a:hover {
-	color:#f38094;
+    padding-top: 40px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 40px;
+    border: 1px solid rgba(234, 241, 241, 1);;
+	border-radius: 15px;
+	font-weight: 700;
+	color: #cc3366;
+	background-color: rgba(234, 241, 241, 0.2);
+    box-shadow: 0 0 3px 3px rgba(221, 221, 221, 1);
 }
 nav ul li p {
-	font-family:Lato, Helvetica, Arial, sans-serif;
-	width:90%;
-	text-decoration:none;
-	text-transform:uppercase;
-	font-weight:400;
-	line-height:250%;
-	display:block;
-	color:#f38094;
+	font-family: Lato, Helvetica, Arial, sans-serif;
+	width: 90%;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	line-height: 250%;
+	display: block;
+	color: #f38094;
 }
 hr {
-	height:1px;
-	width:100%;
-	background-color:#2d2d2d;
-	margin:3% 0;
+	height: 3px;
+	width: 100%;
+	background-color: #2d2d2d;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.boxShadow {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    padding: 5px 15px;
+    box-shadow: 0 0 7px 5px rgba(221, 221, 221, 1);
 }
 header {
-	width:100%;
-	margin:5% 0;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 90%;
+	margin: 40px 0;
 }
-header h1, header h2, header p{
-	font-family: Lato, Arial, Helvetica, sans-serif;
-	text-align:center;
-	font-weight:normal;
-	margin-bottom:1%;
+header p {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-weight: normal;
+    margin-bottom: 1%;
 }
+
 header h1 {
-	font-size:140%;
-	letter-spacing:1px;
-	margin-bottom:1%;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: normal;
+    font-size:140%;
+    letter-spacing:1px;
+    margin-bottom: 3%;
+    margin-top: 2%;
 }
 header h1 span {
 	color:#f38094;
 	text-shadow: 0 1px 1px #dadada;
 }
 header h2 {
-	font-size:100%;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: normal;
+    font-size:100%;
+    margin-bottom: 3%;
 }
-header p {
-	margin-bottom:0;
-}
-#slideshow {
-	display:block;
-	width:100%;
-	margin-top:2%;
-}
+
 /* - - - - - - - - - - - - - - -  Slider START  - - - - - - - - - - - - - - - */
 
 .html_carousel {
@@ -136,10 +156,7 @@ header p {
 	box-shadow: 0 1px 1px #c1c1c1;
 	border-radius:15px;
 }
-.clearfix {
-	display:block;
-	clear:both;
-}
+
 
 /* ----------------------- WORKBODY ------------------------- */
 
@@ -220,7 +237,7 @@ header p {
 .item {
 	border-radius:15px;
 	width:180px;
-	height:185px;
+	height:175px;
 	background-color:#FFF;
 	margin:10px;
 	float:left;
@@ -232,11 +249,12 @@ header p {
 	-moz-transition: box-shadow 0.2s ease-in-out;
 	-o-transition: box-shadow 0.2s ease-in-out;
 	transition: box-shadow 0.2s ease-in-out;
+    box-shadow: 0 0 7px #70e9f3, 0 0 7px #77eef3;
 }
 .item:hover {
 	-webkit-box-shadow: 0 0 8px #f38094, 0 0 8px #f38094;
 	-moz-box-shadow: 0 0 8px #f38094, 0 0 8px #f38094;
-	box-shadow: 0 0 8px #f38094, 0 0 8px #f38094;
+	box-shadow: 0 0 9px #f38094, 0 0 9px #f38094;
 }
 .item img {
 	display:block;
@@ -249,7 +267,6 @@ header p {
 	-webkit-transition: opacity 0.2s ease-in-out;
 	-moz-transition: opacity 0.2s ease-in-out;
 	-o-transition: opacity 0.2s ease-in-out;
-	-ms-transition: opacity 0.2s ease-in-out;
 	transition: opacity 0.2s ease-in-out;
 }
 .item img:hover {
@@ -259,9 +276,10 @@ header p {
 	font-family:Lato, Arial, Helvetica, sans-serif;
 	font-size:105%;
 	font-weight:normal;
-	padding:5px 0 0 8px;
+	padding: 10px 0 0 5px;
 	color:#2d2d2d;
 	text-decoration:none;
+    text-align: center;
 }
 .item h3 a {
 	text-decoration:none;
@@ -274,6 +292,7 @@ header p {
 	padding:0 0 0 8px;
 	color:#f38094;
 	text-decoration:none;
+    text-align: center;
 }
 /* ----------------------- WORK LINKS END ------------------------- */
 
@@ -299,7 +318,7 @@ footer {
 	opacity:0.85;
 }
 .icon:hover {
-	opacity:1;
+	opacity: 0.5;
 }
 .social {
 	color:#f38094;
@@ -322,15 +341,13 @@ footer {
 	font-family:Lato, Arial, Helvetica, sans-serif;
 	font-size:14px;
 	width: 95%;
-	background-color:rgba(255, 255, 255, 1);
-	background-image:url(../images/backgroundtexture.png);
-	margin-bottom:10px;
+    background: rgba(255, 255, 255, 1) url(../images/backgroundtexture.png);
+    margin-bottom:10px;
 	opacity:0.9;
 	padding:3px;
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
-	-ms-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 	border-radius:2px;
 }
@@ -341,7 +358,7 @@ footer {
 	text-align:left;
 	width:20%;
 	background-color:#2d2d2d;
-	border:0px;
+	border: 0;
 }
 .formstyletwo:hover {
 	color:#f38094;
@@ -354,16 +371,14 @@ textarea {
 	font-size:14px;
 	width:95%;
 	height:80px;
-	background-color:rgba(255, 255, 255, 1);
-	background-image:url(../images/backgroundtexture.png);
-	margin-bottom:10px;
+    background: rgba(255, 255, 255, 1) url(../images/backgroundtexture.png);
+    margin-bottom:10px;
 	border-radius:2px;
 	padding:3px;
 	opacity:0.9;
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
-	-ms-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 }
 input:focus, input.focused, textarea:focus, textarea.focused {
@@ -394,14 +409,28 @@ input:focus, input.focused, textarea:focus, textarea.focused {
 
 /* - - - - - - - - - - - - - - -  Copyright  - - - - - - - - - - - - - - - */
 
-#footer section{margin-bottom:50px;}
-
-#footer #copyright{display:block; width:100%; margin:0; padding:0; color:#FFF; font-family:Lato, Arial, Helvetica, sans-serif; font-size:.8em; line-height:140%;}
-
-#footer #copyright .left, #footer #copyright .right {width:auto; margin:0;}
-#footer #copyright .left {float:left;}
-#footer #copyright .right {float:right;}
-
+#footer section {
+    margin-bottom:50px;
+}
+#footer #copyright {
+    display:block;
+    width:100%;
+    margin:0;
+    padding:0;
+    color:#FFF;
+    font-family:Lato, Arial, Helvetica, sans-serif;
+    font-size:.8em;
+    line-height:140%;
+}
+#footer #copyright .left, #footer #copyright .right {
+    width:auto;
+}
+#footer #copyright .left {
+    float:left;
+}
+#footer #copyright .right {
+    float:right;
+}
 #footer #copyright, #footer #copyright a {
 	color:#f38094;
 	text-decoration:none;
